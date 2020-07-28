@@ -10,4 +10,4 @@ export let owners: string[] = ["owner ids"];
 
 export let color: string = "hex color";
 
-After that, run tsc and cd into the dist folder. Then node bot.js/
+After that, run tsc and cd into the dist folder. Then node bot.js
