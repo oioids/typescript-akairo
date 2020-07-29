@@ -9,6 +9,11 @@ export default class ReadyListener extends Listener {
         });
     }
     public exec(): void {
-        console.log(`${this.client.user.tag} is now online!`)
+        console.log(`${this.client.user.tag} is now online!`);
+        this.client.user.setPresence({
+            activity: {
+                name: `${prefix}help`
+            }, status: 'dnd'
+        });
     }
 }
